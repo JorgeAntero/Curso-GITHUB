@@ -8,5 +8,9 @@ jobs:
       steps:
           - name: Checar código
             uses: actions/checkout@v4
-          - name: Printando arquivos
-            run: ls
+          - name: Configurando Node
+            uses: actions/setup-node@v3
+            with:
+              node-versio: '20.x'
+          - name: Instalando dependencias
+            run: npm ci
