@@ -6,7 +6,7 @@ jobs:
   build:
       runs-on: ubuntu-latest
       steps:
-      - name: Checar código
-        uses: action/checkout@v4
-      - name: Printando arquivos
-        run: ls
+          - name: Checar código
+            uses: actions/checkout@v4
+          - name: Printando arquivos
+            run: ls
